@@ -20,9 +20,9 @@ jobs:
 
     - name: Run tests
       env:
-        census_api: ${{ secrets.CENSUS_API }}
-        gac_username: ${{ secrets.GAC_USERNAME }}
-        gac_password: ${{ secrets.GAC_PASSWORD }}
+        CENSUS_API: ${{ secrets.CENSUS_API }}
+        GAC_USERNAME: ${{ secrets.GAC_USERNAME }}
+        GAC_PASSWORD: ${{ secrets.GAC_PASSWORD }}
         
       # run: |
       #   python app.py
