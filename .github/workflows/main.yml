@@ -1,0 +1,28 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    # - name: Install dependencies
+    #   run: |
+    #     pip install -r requirements.txt
+
+    - name: Run tests
+      env:
+        census_api: ${{ secrets.CENSUS_API }}
+        gac_username: ${{ secrets.GAC_USERNAME }}
+        gac_password: ${{ secrets.GAC_PASSWORD }}
+        
+      # run: |
+      #   python app.py
