@@ -30,9 +30,10 @@ Ensure you have the following credentials set up in your .env file:
 CENSUS_API=your_census_api_key
 GAC_USERNAME=your_gac_arcgis_username
 GAC_PASSWORD=your_arcgis_password
-This file should be located in the same directory as the script.
 </code>
 
+
+This file should be located in the same directory as the script. 
 ### ArcGIS Connection
 
 The script uses ArcGIS to fetch additional data. Make sure your credentials have the necessary permissions to access the ArcGIS resources.
