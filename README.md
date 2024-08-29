@@ -34,9 +34,7 @@ GAC_PASSWORD=your_arcgis_password
 
 
 This file should be located in the same directory as the script. 
-### ArcGIS Connection
 
-The script uses ArcGIS to fetch additional data. Make sure your credentials have the necessary permissions to access the ArcGIS resources.
 
 ## Script Functionality
 
